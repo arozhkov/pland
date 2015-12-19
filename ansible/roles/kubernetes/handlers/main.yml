@@ -1,0 +1,6 @@
+---
+- name: restart kubernetes
+  service: 
+    name: kubernetes 
+    state: restarted
+  become: true

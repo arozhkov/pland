@@ -1,0 +1,14 @@
+
+
+[masters]
+master.kub
+
+[etcd]
+master.kub
+
+[nodes]
+node1.kub
+node2.kub
+node3.kub
+
+

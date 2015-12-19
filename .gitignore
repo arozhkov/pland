@@ -1,0 +1,5 @@
+.vagrant/
+id_rsa.pub
+*.rpm
+**/*.rpm
+

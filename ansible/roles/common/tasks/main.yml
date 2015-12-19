@@ -1,0 +1,23 @@
+---
+- name: clean repos
+  shell: "rm /etc/yum.repos.d/virt7*"
+  become: true
+  ignore_errors: yes
+
+- name: setup repo
+  copy:
+    src: virt7-docker-common-release.repo
+    dest: /etc/yum.repos.d/
+  become: true
+
+- name: setup network
+  template:
+    src: network.j2
+    dest: /etc/sysconfig/network
+    mode: 644
+  become: true
+  notify: 
+  - restart network
+
+- meta: flush_handlers
+

@@ -1,0 +1,9 @@
+---
+- hosts: masters
+  vars:
+    kind: master
+  roles:
+    - common
+    - etcd
+    - flannel
+    - kubernetes

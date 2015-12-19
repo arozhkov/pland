@@ -1,0 +1,8 @@
+---
+ansible_ssh_user: vagrant
+
+cluster_name: local_test_3
+
+flannel:
+  network: 18.16.0.0/16
+  subnet_len: 24

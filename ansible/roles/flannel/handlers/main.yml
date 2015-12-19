@@ -1,0 +1,6 @@
+---
+- name: restart flannel
+  service: 
+    name: flannel 
+    state: restarted
+  become: true

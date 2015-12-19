@@ -1,0 +1,10 @@
+# main playbook
+---
+- include: kubernetes_master.yml
+- include: kubernetes_node.yml
+
+
+
+
+
+

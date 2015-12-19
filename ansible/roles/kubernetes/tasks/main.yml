@@ -1,0 +1,7 @@
+---
+- name: install kubernetes
+  yum:
+    name: kubernetes
+    state: latest
+  become: true
+
